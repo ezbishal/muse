@@ -1,0 +1,30 @@
+POST http://localhost:3000/api/streams
+Content-Type: application/json
+
+{
+    "creatorId": "0e715f13-15e1-4f2f-9648-488a9c7ceaab",
+    "url": "https://www.youtube.com/watch?v=QBlYYOsdG-U"
+}
+
+###
+
+POST http://localhost:3000/api/streams/upvote
+Content-Type: application/json
+
+{
+    "streamId": "4ca411ca-4cdc-48a0-94a3-41678e0e0750",
+}
+
+###
+
+GET http://localhost:3000/api/streams/?creatorId=69d3e20e-47e5-4f33-97f4-32b10e91f9e4
+
+###
+
+GET https://catfact.ninja/fact/{{getrequest.response.body[0].name}}
+
+
+###
+
+# @name getrequest
+GET http://universities.hipolabs.com/search?country=Nepal
